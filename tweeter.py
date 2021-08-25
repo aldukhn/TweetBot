@@ -4,7 +4,7 @@ from time import sleep
 driver = webdriver.Chrome(executable_path="CHROMEDRIVER.EXE DIR") #Add the dirctory of Chromedriver that work with you chrome version.
 driver.get("https://twitter.com/login")
 sleep(3)
-driver.find_element_by_name('session[username_or_email]').send_keys("USERNAME/PASSWORD") # Add the user name of your twitter account
+driver.find_element_by_name('session[username_or_email]').send_keys("USERNAME") # Add the user name of your twitter account
 driver.find_element_by_name('session[password]').send_keys("PASSWORD") # Add the Password of your twitter account
 driver.find_element_by_name('session[password]').send_keys(Keys.RETURN)
 sleep(3)
